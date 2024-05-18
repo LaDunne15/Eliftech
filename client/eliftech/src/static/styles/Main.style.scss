@@ -1,0 +1,63 @@
+@use 'variables';
+@import url('https://fonts.cdnfonts.com/css/noto-serif-old-uyghur');
+@import "./eventList.scss";
+
+.App {
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    header {
+        background-color: variables.$red;
+        padding: 15px;
+        padding-left: 30px;
+
+        a {
+            color: white;
+            background: none;
+            font-size: large;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 3px;
+            transition: 0.5s;
+
+            &:hover {
+                background-color: variables.$dark-red;
+            }
+        }
+        
+    }
+
+    footer {
+        background-color: variables.$red;
+        padding: 15px 15px;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+* {
+    color: rgba(255, 255, 255, 0.76);
+    font-family: 'Noto Serif Old Uyghur', sans-serif;                          
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+
+input {
+    background: none;
+    border: 2px solid variables.$dark-red;
+    padding: 5px;
+    accent-color: variables.$red;
+}
