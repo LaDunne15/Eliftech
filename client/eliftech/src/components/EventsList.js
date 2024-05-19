@@ -16,7 +16,6 @@ const EventList = () => {
     });
 
     const fetchEvents = async (limit, offset) => {
-        console.log(`${process.env.REACT_APP_HOST}/?orderBy=${sort.orderBy}&reverse=${sort.reverse}&limit=${limit}&offset=${offset}`);
         const response = await fetch(`${process.env.REACT_APP_HOST}/?orderBy=${sort.orderBy}&reverse=${sort.reverse}&limit=${limit}&offset=${offset}`, {
             method: 'GET',
             headers: { 'Content-Type': 'application/json' }
